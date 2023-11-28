@@ -498,13 +498,20 @@ a{
         display: grid;
         grid-column: 2;
     }
+    .nav--footer,.footer_form{
+        margin: auto;
+        padding: 15px;
+    }
+    .nav--footer h2{
+        display: none;
+    }
     nav .nav_link--footer{
         display: grid;
-        grid-column: 4;
+        grid-column: 1;
         margin-bottom: 20px;
     }
     .footer_form .footer_input{
-        width: 350px;
+        width: 250px;
     }
 
 }
