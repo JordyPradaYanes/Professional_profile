@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -452,23 +455,49 @@ a{
     }
     .about_icons{
         grid-column: 1;
+        /* grid-row: 3; */
         grid-template-columns: minmax(300px);
         margin-top: 10px;
     }
-    .person{
-        height: 250px;
+    header{
+        height: 30px;
+    }
+    main{
+        margin-top: -300px;
     }
     .person_container.container{
-        height: 330px;
+        height: 320px;
     }
     .person::before{
-        height: 20vh;
+        height: 300px;
     }
     .options_container{
         grid-template-columns: 1fr;
     }
+    .subtitle,.testimony_course{
+        font-size: 20px;
+    }
+    .options_paragraph,.testimony_review{
+        text-align: justify;
+    }
     .options_picture{
         display: none;
+    }
+    .testimony_container{
+        width: 100%;
+        margin: auto;
+    }
+    .testimony p{
+        font-size: 11px;
+    }
+}
+@media (max-width: 570px) {
+    .testimony_img{
+        position: relative;
+        top: -50px;
+        left: -15px;
+        width: 60px;
+        height: 60px;
     }
 }
 
