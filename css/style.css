@@ -436,6 +436,9 @@ a{
         margin:auto;
         margin-top: 300px;
     }
+    .options_container{
+        gap:2em;
+    }
     .person{
         height: 320px;
     }
@@ -481,6 +484,7 @@ a{
     }
     .options_container{
         grid-template-columns: 1fr;
+        gap:20em;
         height: 500px;
     }
     .subtitle,.testimony_course{
@@ -491,8 +495,8 @@ a{
     }
     .options_picture{
         position: relative;
-        bottom: 680px;
-        left: 300px;
+        bottom: 600px;
+        left: 350px;
         width: 120px;
         height: 120px;
     }
@@ -533,7 +537,25 @@ a{
     }
 
 }
-@media (max-width: 570px) {
+@media (max-width: 666px){
+    .options_picture{
+        position: relative;
+        bottom: 600px;
+        left: 350px;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 656px){
+    .options_picture{
+        position: relative;
+        bottom: 620px;
+        left: 350px;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 575px) {
     .nav_link--footer{
         width: 300px;
         display: flex;
@@ -555,20 +577,75 @@ a{
     .footer_form .footer_input{
         width: 200px;
     }
+    .options_picture{
+        position: relative;
+        bottom: 640px;
+        left: 350px;
+        gap: 10em;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 525px) {
+    .options_picture{
+        bottom: 680px;
+        left: 300px;
+    }
 }
 
 /* Mobile (largue) 468px */
-@media (max-width: 468px) {
+@media (max-width: 480px) {
     .about_icons{
         margin-top: 10px;
     }
-
+    .options_container{
+        grid-template-columns: 1fr;
+        height: 600px;
+    }
+    .options_picture{
+        position: relative;
+        bottom: 700px;
+        left: 250px;
+        width: 120px;
+        height: 120px;
+    }
 }
-
+@media (max-width: 468px) {
+    .footer_container{
+        margin: auto;
+    }
+    .footer_form .footer_input{
+        width: 120px;
+        font-size: 10px;
+    }   
+    .nav_link--footer{
+        margin: auto;
+    }
+}
 /* Mobile medium 425px */
 @media (max-width: 425px) {
     .about_icons{
         margin-top: 10px;
+    }
+    .options_picture{
+        bottom: 750px;
+        left: 220px;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 400px) {
+    .nav_link--footer{
+        width: 150px;
+        font-size: 12px;
+        margin: auto;
+    }
+    .footer_title{
+        margin-left: -50px;
+    }
+    .footer_form .footer_input{
+        width: 120px;
+        font-size: 12px;
     }
 }
 
