@@ -210,6 +210,10 @@ a{
     transition: opacity 1.5s ease-in-out;
 }
 
+.options_paragraph,.testimony_review,.questions_show{
+    text-align: justify;
+}
+
 .testimony_img{
     width: 250px;
     height: 250px;
@@ -450,7 +454,7 @@ a{
     .nav_title{
         display: none;
     }
-    .nav{
+    nav.nav{
         display: none;
     }
     .about_icons{
@@ -490,6 +494,19 @@ a{
     .testimony p{
         font-size: 11px;
     }
+    .footer_container{
+        display: grid;
+        grid-column: 2;
+    }
+    nav .nav_link--footer{
+        display: grid;
+        grid-column: 4;
+        margin-bottom: 20px;
+    }
+    .footer_form .footer_input{
+        width: 350px;
+    }
+
 }
 @media (max-width: 570px) {
     .testimony_img{
