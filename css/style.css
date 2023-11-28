@@ -27,8 +27,8 @@ a{
 .person{
     width: 100%;
     height: 100vh;
-    min-height: 600px;
-    max-height: 800px;
+    /* min-height: 600px; */
+    /* max-height: 800px; */
     position:relative;
      display: grid;
      grid-template-rows: 100px 1fr;
@@ -124,6 +124,7 @@ a{
     line-height: 1.7;
 }
 .about_main{
+    margin: auto;
     padding-top: 80px;
     display: grid;
     width: 90%;
@@ -409,3 +410,60 @@ a{
 .footer_img{
     width: 30px;
 }
+
+/* screen (largue) 1200px */
+
+@media (max-width: 1200px) {
+
+}
+
+/* Laptop medium 1024px */
+@media (max-width: 1024px) {
+    .about_icons{
+        margin:auto;
+        margin-top: 10px;
+    }
+}
+
+/* Tablet 768px */
+/* My celphone 720px */
+@media (max-width: 720px) {
+    .nav_title{
+        display: none;
+    }
+    .nav_link{
+        display: none;
+    }
+    .about_icons{
+        grid-column: 1;
+        grid-template-columns: minmax(300px);
+        margin-top: 10px;
+    }
+    .person{
+        height: 350px;
+    }
+    .person::before{
+        height: 20vh;
+    }
+    .options_container{
+        grid-template-columns: 1fr;
+    }
+    .options_picture{
+        display: none;
+    }
+}
+
+/* Mobile (largue) 468px */
+@media (max-width: 468px) {
+    .about_icons{
+        margin-top: 10px;
+    }
+}
+
+/* Mobile medium 425px */
+@media (max-width: 425px) {
+    .about_icons{
+        margin-top: 10px;
+    }
+}
+
