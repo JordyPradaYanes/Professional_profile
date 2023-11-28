@@ -431,7 +431,7 @@ a{
     .nav_title{
         display: none;
     }
-    .nav_link{
+    nav.nav{
         display: none;
     }
     .about_icons{
@@ -440,7 +440,10 @@ a{
         margin-top: 10px;
     }
     .person{
-        height: 350px;
+        height: 250px;
+    }
+    .person_container.container{
+        height: 330px;
     }
     .person::before{
         height: 20vh;
