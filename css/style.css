@@ -481,6 +481,7 @@ a{
     }
     .options_container{
         grid-template-columns: 1fr;
+        height: 500px;
     }
     .subtitle,.testimony_course{
         font-size: 20px;
@@ -489,7 +490,14 @@ a{
         text-align: justify;
     }
     .options_picture{
-        display: none;
+        position: relative;
+        bottom: 680px;
+        left: 300px;
+        width: 120px;
+        height: 120px;
+    }
+    .options_texts .subtitle{
+        margin-bottom: 60px;
     }
     .testimony_container{
         width: 100%;
