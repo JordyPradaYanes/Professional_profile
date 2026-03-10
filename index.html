@@ -8,238 +8,345 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- SEO & Social Media -->
+    <meta name="description" content="Portafolio Profesional de Jordy Prada Yanes - Ingeniería de Sistemas, Desarrollo Cloud & IA.">
+    <meta name="keywords" content="Jordy Prada, Portafolio, Ingeniería de Sistemas, Cloud, IA, Algoritmos, ICPC">
+    <meta property="og:title" content="Jordy Prada | Ingeniería de Sistemas & Cloud">
+    <meta property="og:description" content="Descubre mis proyectos y certificaciones en arquitectura cloud, algoritmos y desarrollo de software.">
+    <meta property="og:image" content="img/Foto_perfil.png">
+    <meta property="og:url" content="https://jordypradayanes.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="person">
-        <nav class="nav container">
+    <header class="person" id="inicio">
+        <nav class="nav">
             <div class="nav_logo">
                 <h2 class="nav_title">Jordy Prada</h2>
             </div>
-            <ul class="nav_link nav_link--menu">
+            <ul class="nav_link">
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Inicio</a>
+                    <a href="#inicio" class="nav_links">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#contact" class="nav_links">Quien soy</a>
+                    <a href="#sobre-mi" class="nav_links">Sobre mí</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#references" class="nav_links">Referencias</a>
+                    <a href="#habilidades" class="nav_links">Habilidades</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#redesSociales" class="nav_links">Redes sociales</a>
+                    <a href="#certificados" class="nav_links">Certificados</a>
                 </li>
-                <img src="Icons/exit-white.svg" alt="Icon close" class="nav_logo">
+                <li class="nav_items">
+                    <a href="#proyectos" class="nav_links">Proyectos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#testimonios" class="nav_links">Testimonios</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contacto" class="nav_links">Contacto</a>
+                </li>
+                <li class="nav_items">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
             </ul>
+        </nav>
             <div class="nav_menu">
                 <img src="Icons/menu.svg" alt="" class="nav_img">
             </div>
         </nav>
-        <section class="person_container container" id="Inicio">
+        <section class="person_container">
             <h1 class="person_title">Jordy Prada Yanes</h1>
-            <p class="person_paragraph">#ComputerSystemsEngineeringStudent</p>
-            <a href="#" class="btn">Haz Click</a>
+            <p class="person_paragraph">Ingeniería de Sistemas | Desarrollo Cloud & IA | Analítica Algorítmica</p>
+            <a href="#sobre-mi" class="btn">Conoce mi Perfil</a>
         </section>
     </header>
     <!-- start features diferents -->
     <main>
-        <section class="container about" >
-            <h2>Repositorios en Git-Hub</h2>
-            <p class="about_paragraph">En mi cuenta de GitHub, mantengo una colección de 10 repositorios que incluyen proyectos relacionados con desarrollo web, scripts de automatización y contribuciones a proyectos de código abierto.
-            He aqui mi presentación de 3 de ellos:</p>
-            <div class="about_main">
-                <article class="about_icons">
-                    <a href="https://jordypradayanes.github.io/Reloj-En-Tiempo-Real/"><img src="Icons/time.svg" alt="" class="about_icon"></a>
-                    <a href="https://jordypradayanes.github.io/Reloj-En-Tiempo-Real/"><h3 class="about_title">Reloj en tiempo real</h3></a>
-                    <p class="about_paragraph">Reloj utilizando JavaScript que muestra la hora actual de forma precisa.
-                    </p>
-                </article>  
-                <article class="about_icons">
-                    <a href="https://jordypradayanes.github.io/Juego-Memoria/"><img src="Icons/brain.svg" alt="" class="about_icon"></a>
-                    <a href="https://jordypradayanes.github.io/Juego-Memoria/"><h3 class="about_title">Juego de memoria</h3></a>
-                    <p class="about_paragraph"> Juego de memoria completamente funcional creado en JavaScript.
-                    </p>
-                </article>
-                <article class="about_icons">
-                    <a href="https://jordypradayanes.github.io/Sistema-Solar/"><img src="Icons/planet.svg" alt="" class="about_icon"></a>
-                    <a href="https://jordypradayanes.github.io/Sistema-Solar/"><h3 class="about_title">Sistema solar</h3></a>
-                    <p class="about_paragraph">Maqueta simple de un sistema solar usando solo HTML y CSS con movimiento y animación.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section class="options" id="contact">
+        <!-- 2. Sobre Mí -->
+        <section class="options" id="sobre-mi" data-aos="fade-up">
             <div class="options_container container">
                 <div class="options_texts">
-                    <h2 class="subtitle">Jordy Prada Yanes</h2>                    
-                    <p class="options_paragraph">Soy un estudiante apasionado de ingeniería en sistemas que está constantemente buscando expandir mis conocimientos y habilidades en el mundo de la tecnología. Mi objetivo es adquirir una comprensión profunda de cómo funcionan los sistemas informáticos, desde el diseño hasta la implementación, con el fin de desarrollar soluciones innovadoras y eficientes. Me fascina la idea de crear software y aplicaciones que impacten positivamente en la vida de las personas, abordando problemas complejos y mejorando la experiencia del usuario.</p>
+                    <h2 class="subtitle" style="color: #fff; text-align: left;">Mi Visión Tecnológica</h2>                    
+                    <p class="options_paragraph">Soy estudiante de Ingeniería de Sistemas con una profunda vocación por entender la tecnología desde sus fundamentos hasta su impacto en el usuario. Mi formación no solo abarca el código; incluye la <strong>arquitectura en la nube</strong>, el <strong>pensamiento algorítmico avanzado</strong> forjado en competiciones internacionales (ICPC), y la comprensión del comportamiento humano a través de herramientas cognitivas y <strong>psicología del consumidor</strong>. Mi objetivo es construir soluciones de software que no solo sean robustas, sino genuinamente intuitivas e inteligentes.</p>
+                    <div class="options_buttons" style="margin-top: 30px;">
+                        <a href="Documentos/CV_Jordy_Prada.html"  class="btn btn--white">Descargar CV <i class="fa-solid fa-download" style="margin-left: 10px;"></i></a>
+                    </div>
                 </div>
                 <figure class="options_picture">
-                    <img src="img/Foto_perfil.png" alt="Imagen Options" class="options_img">
+                    <img src="img/Foto_perfil.png" alt="Foto de Perfil Jordy Prada" class="options_img" loading="lazy">
                 </figure>
             </div>
         </section>
 
-        <section class="testimony" id="references">
-            <div class="testimony_container container">
-
-                <img src="Icons/leftarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="before">
-
-                <section class="testimony_body testimony_body--show" data-id="1">
-                    <div class="testimony_texts">
-                        <h2 class="subtitle">Mi nombre es Angel Chona Perez
-                            <span class="testimony_course">Tecnico en sistemas</span>
-                        </h2>
-                        <p class="testimony_review">Como tecnico con experiencia en el area de sistemas, me complace recomendar encarecidamente a Jordy. Durante nuestro tiempo trabajando juntos en proyectos académicos y prácticos, he tenido la oportunidad de ver su excepcional capacidad para comprender y aplicar conceptos tecnológicos de manera efectiva.</p>
-                    </div>
-                    <figure class="testimony_picture">
-                        <img src="img/a.jpeg" alt="Foto Persona" class="testimony_img">
-                    </figure>
-                </section>
-
-                <section class="testimony_body" data-id="2">
-                    <div class="testimony_texts">
-                        <h2 class="subtitle">Mi nombre es Jacqueline Torres Yanes
-                            <span class="testimony_course">Marinera II - Armada Nacional</span>
-                        </h2>
-                        <p class="testimony_review">Su destreza técnica es notable, pero lo que destaca aún más es su habilidad para colaborar en equipos. Jordy es un comunicador efectivo, capaz de transmitir ideas técnicas de manera clara y concisa. Su actitud proactiva y su disposición para apoyar a sus compañeros son cualidades que lo hacen destacar en cualquier entorno de trabajo colaborativo.</p>
-                    </div>
-                    <figure class="testimony_picture">
-                        <img src="img/foto2.jpeg" alt="Foto Persona" class="testimony_img">
-                    </figure>
-                </section>
-
-                <section class="testimony_body" data-id="3">
-                    <div class="testimony_texts">
-                        <h2 class="subtitle">Mi nombre es Jairo Raul Camargo
-                            <span class="testimony_course">Licenciado en Matemáticas</span>
-                        </h2>
-                        <p class="testimony_review">Jordy ha demostrado ser un estudiante dedicado y apasionado por la ingeniería en sistemas. Su enfoque meticuloso para resolver problemas complejos es admirable. Siempre busca comprender a fondo las raíces de los desafíos tecnológicos y aborda cada situación con creatividad y precisión.</p>
-                    </div>
-                    <figure class="testimony_picture">
-                        <img src="img/j.png" alt="Foto Persona" class="testimony_img">
-                    </figure>
-                </section>
-
-                <section class="testimony_body" data-id="4">
-                    <div class="testimony_texts">
-                        <h2 class="subtitle">Mi nombre es Mauricio Pacheco
-                            <span class="testimony_course">Programador en WPOSS</span>
-                        </h2>
-                        <p class="testimony_review">Además de sus habilidades técnicas, destaco su habilidad para trabajar en equipo. Jordy es un colaborador comprometido y un comunicador efectivo. Su capacidad para liderar discusiones y trabajar hacia soluciones consensuadas demuestra su habilidad para adaptarse a diferentes entornos y facilitar el progreso del equipo.</p>
-                    </div>
-                    <figure class="testimony_picture">
-                        <img src="img/M.png" style="transform: rotate(-45deg);" alt="Foto Persona" class="testimony_img">
-                    </figure>
-                </section>
-
-                <img src="Icons/rightarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="next">
-
-            </div>
-        </section>
-
-        <section class="questions" id="questions">
+        <!-- 3. Habilidades Especializadas -->
+        <section class="questions" id="habilidades" data-aos="fade-up">
             <div class="container">
-                <h2 class="subtitle">Habilidades</h2>
-                <p class="questions_paragraph">En la siguiente sección, descubrirás mi destreza técnica en la arquitectura de servidores y bases de datos (backend), así como mi capacidad para diseñar interfaces de usuario interactivas y atractivas (frontend). Además, destacaré las habilidades que me convierten en un colaborador efectivo, como la comunicación fluida, el trabajo en equipo y la resolución creativa de problemas.</p>
+                <h2 class="subtitle" style="text-align: center;">Áreas de Especialización</h2>
+                <p class="questions_paragraph" style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--text-light); font-size: 1.1rem;">Mi perfil se apoya en certificaciones oficiales que validan un conjunto de habilidades analíticas, arquitectónicas y de desarrollo orientado al usuario.</p>
 
                 <section class="questions_container">
                     <article class="questions_padding">
                         <div class="questions_answer">
-                            <h3 class="questions_title">Frontend
+                            <h3 class="questions_title">Lógica Matemática y Algoritmia Avanzada
                                 <span class="questions_arrow">
-                                    <img src="Icons/arrow.svg" class="questions_img">
+                                    <img src="Icons/arrow.svg" alt="Flecha" class="questions_img">
                                 </span>
                             </h3>
-
-                            <p class="questions_show">Poseo conocimientos en tecnologías de frontend, incluyendo HTML, CSS y JavaScript, así como experiencia en el uso de frameworks como React, Vue.js o Angular. He trabajado en el diseño y desarrollo de interfaces de usuario atractivas y responsivas, optimizando la experiencia del usuario en diferentes plataformas y dispositivos.</p>
+                            <p class="questions_show">Destaco en la resolución de problemas lógicos complejos. Como participante en las <strong>Maratones Nacionales de Programación ICPC (2025 y 2026)</strong>, poseo un enfoque metódico para estructurar algoritmos eficientes bajo presión, optimizando tiempo de ejecución y recursos; habilidades críticas para construir núcleos de aplicaciones sólidos utilizando <strong>Java, Python y C++</strong>.</p>
                         </div>
                     </article>
 
                     <article class="questions_padding">
                         <div class="questions_answer">
-                            <h3 class="questions_title">Backend
+                            <h3 class="questions_title">Arquitectura Cloud y Bases de Datos
                                 <span class="questions_arrow">
-                                    <img src="Icons/arrow.svg" class="questions_img">
+                                    <img src="Icons/arrow.svg" alt="Flecha" class="questions_img">
                                 </span>
                             </h3>
-
-                            <p class="questions_show">Tengo experiencia en el desarrollo de backend, con conocimientos en lenguajes como Python, Node.js o Java. Además, estoy familiarizado con el manejo de bases de datos como MySQL, MongoDB y la creación de API RESTful para asegurar la funcionalidad robusta y eficiente de las aplicaciones.</p>
+                            <p class="questions_show">Acreditado formalmente en <strong>Arquitectura en la Nube</strong>, comprendo cómo desplegar ecosistemas de software escalables. Combino esto con conocimientos certificados en diseño y manipulación de <strong>Bases de Datos SQL</strong>, lo que me permite crear backends fiables y manejar persistencia de datos de misión crítica, siempre mediante un riguroso <strong>control de versiones con Git</strong>.</p>
                         </div>
                     </article>
 
                     <article class="questions_padding">
                         <div class="questions_answer">
-                            <h3 class="questions_title">Habilidades blandas
+                            <h3 class="questions_title">Desarrollo Frontend, Inteligencia Cognitiva y UX
                                 <span class="questions_arrow">
-                                    <img src="Icons/arrow.svg" class="questions_img">
+                                    <img src="Icons/arrow.svg" alt="Flecha" class="questions_img">
                                 </span>
                             </h3>
-
-                            <p class="questions_show">Además de mis habilidades técnicas, cuento con fuertes habilidades blandas, incluyendo comunicación efectiva, trabajo en equipo colaborativo y resolución creativa de problemas. Soy adaptable, proactivo y comprometido con el aprendizaje continuo, lo que me permite enfrentar desafíos con una mentalidad abierta y constructiva.</p>
+                            <p class="questions_show">El software debe entender a las personas. He integrado conceptos de la certificación <strong>IBM: Clase Cognitiva</strong> y estudios en <strong>Psicología del Consumidor</strong> para diseñar interfaces que no solo sean atractivas visualmente con <strong>HTML, CSS y JS</strong>, sino que respondan intuitivamente a los modelos mentales del usuario, cerrando la brecha entre la lógica de máquina y la experiencia humana.</p>
                         </div>
                     </article>
                 </section>
+            </div>
+        </section>
 
-                <section class="questions_offer">
-                    <a href="https://seincienciatecnologia.ufpso.edu.co/"><h2 class="subtitle">Conferencia de Tecnolgía e innovación</h2></a>
-                    <p class="questions_copy">La X Semana Internacional de Ciencia, Tecnología e Innovación, es un evento dirigido a la comunidad académico - científica y los sectores productivos de la región, que tiene como propósito la presentación de los avances en investigación y extensión de la Universidad Francisco de Paula Santander Seccional Cúcuta - Ocaña</p>
-                    <a href="Documentos/ceftificado1.pdf" class="cta" style="text-decoration: none; color: black; border: 1px solid black; padding: 10px; border-radius: 5px;">Certificado</a>
+        <!-- 4. Certificados -->
+        <section class="certificates" id="certificados" style="background: var(--bg-white); padding: 60px 0;" data-aos="fade-up">
+            <div class="container">
+                <h2 class="subtitle" style="text-align: center;">Mis Logros y Certificaciones</h2>
+                <p class="certificates_intro" style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--text-light); font-size: 1.1rem;">Explora mi trayectoria académica y profesional a través de mis certificaciones obtenidas en diversas áreas de la ingeniería y el desarrollo.</p>
+                
+                <div class="certificates_grid">
+                    <article class="certificate_card premium">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-graduation-cap certificate_icon highlight"></i>
+                        <h3 class="certificate_title">Técnico en Sistemas</h3>
+                        <p class="certificate_entity">Institución Educativa</p>
+                        <a href="Documentos/tecnico.pdf" target="_blank" class="certificate_btn">Ver Título</a>
+                    </article>
+                    <article class="certificate_card premium">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-microphone-lines certificate_icon highlight"></i>
+                        <h3 class="certificate_title">X Semana de Ciencia y Tecnología</h3>
+                        <p class="certificate_entity">UFPSO</p>
+                        <a href="Documentos/ceftificado1.pdf" target="_blank" class="certificate_btn">Ver Certificado</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-trophy certificate_icon"></i>
+                        <h3 class="certificate_title">ICPC Maratón Nacional 2026</h3>
+                        <a href="Documentos/2026-ICPC Colombia Maraton Nal ACIS REDIS-Jordy Daniel Prada Yanes-PLACE.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-award certificate_icon"></i>
+                        <h3 class="certificate_title">ICPC Maratón Nacional 2025</h3>
+                        <a href="Documentos/2025-ICPC ColombiaMaratonNalACISREDIS-Jordy Daniel Prada Yanes-PLACE.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-cloud certificate_icon"></i>
+                        <h3 class="certificate_title">Arquitectura en la Nube</h3>
+                        <a href="Documentos/ArquitecturaNube.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-microchip certificate_icon"></i>
+                        <h3 class="certificate_title">IBM: Clase Cognitiva</h3>
+                        <a href="Documentos/Certificado IBM EN _ Clase Cognitiva.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-users-viewfinder certificate_icon"></i>
+                        <h3 class="certificate_title">Psicología del Consumidor</h3>
+                        <a href="Documentos/Curso de Psicología del consumidor para redes sociales.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-laptop-code certificate_icon"></i>
+                        <h3 class="certificate_title">Programación Intermedia</h3>
+                        <a href="Documentos/ProgramacionIntermedia.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-database certificate_icon"></i>
+                        <h3 class="certificate_title">Bases de Datos SQL</h3>
+                        <a href="Documentos/diploma-dbsql.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-brands fa-git-alt certificate_icon"></i>
+                        <h3 class="certificate_title">Control de Versiones Git</h3>
+                        <a href="Documentos/diploma-git-github.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                    <article class="certificate_card">
+                        <div class="card_glass"></div>
+                        <i class="fa-solid fa-language certificate_icon"></i>
+                        <h3 class="certificate_title">Inglés A1 Ingenieros</h3>
+                        <a href="Documentos/diploma-ingles-a1-Ingenieros.pdf" target="_blank" class="certificate_btn">Abrir PDF</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Proyectos -->
+        <section class="about" id="proyectos" data-aos="fade-up">
+            <div class="container">
+                <h2 class="subtitle">Repositorios en GitHub</h2>
+                <p class="about_paragraph">Explora mi trabajo práctico a través de los siguientes repositorios. En cada uno aplico buenas prácticas y lógica de programación.</p>
+                <div class="about_main">
+                    <article class="about_icons">
+                        <a href="https://jordypradayanes.github.io/Reloj-En-Tiempo-Real/" target="_blank">
+                            <img src="Icons/time.svg" loading="lazy" alt="Icono Reloj" class="about_icon">
+                        </a>
+                        <h3 class="about_title">Reloj en tiempo real</h3>
+                        <p class="about_paragraph">Visualización precisa de la hora actual utilizando JavaScript dinámico.</p>
+                    </article>  
+                    <article class="about_icons">
+                        <a href="https://jordypradayanes.github.io/Juego-Memoria/" target="_blank">
+                            <img src="Icons/brain.svg" loading="lazy" alt="Icono Memoria" class="about_icon">
+                        </a>
+                        <h3 class="about_title">Juego de memoria</h3>
+                        <p class="about_paragraph">Desafío interactivo creado para poner a prueba habilidades cognitivas.</p>
+                    </article>
+                    <article class="about_icons">
+                        <a href="https://jordypradayanes.github.io/Sistema-Solar/" target="_blank">
+                            <img src="Icons/planet.svg" loading="lazy" alt="Icono Sistema Solar" class="about_icon">
+                        </a>
+                        <h3 class="about_title">Sistema solar</h3>
+                        <p class="about_paragraph">Representación animada de planetas puramente con HTML y CSS.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonios -->
+        <section class="testimony" id="testimonios" data-aos="fade-up">
+            <div class="testimony_container container">
+                <img src="Icons/leftarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="before">
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle" style="text-align: left; margin-bottom: 5px;">Angel Chona Perez</h2>
+                        <span class="testimony_course">Técnico en Sistemas</span>
+                        <p class="testimony_review" style="margin-top: 15px;">"Como técnico con experiencia en sistemas, me complace recomendar a Jordy. Su capacidad para comprender y aplicar conceptos tecnológicos es excepcional, demostrando un compromiso único en cada proyecto académico y práctico."</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/a.jpeg" loading="lazy" alt="Foto Angel Chona" class="testimony_img">
+                    </figure>
                 </section>
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle" style="text-align: left; margin-bottom: 5px;">Jacqueline Torres Yanes</h2>
+                        <span class="testimony_course">Marinera II - Armada Nacional</span>
+                        <p class="testimony_review" style="margin-top: 15px;">"Su destreza técnica es notable, pero lo que más destaca es su habilidad para colaborar en equipo. Jordy es un comunicador efectivo, proactivo y siempre dispuesto a apoyar a sus compañeros en cualquier entorno de trabajo."</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/foto2.jpeg" loading="lazy" alt="Foto Jacqueline Torres" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="3">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle" style="text-align: left; margin-bottom: 5px;">Jairo Raul Camargo</h2>
+                        <span class="testimony_course">Licenciado en Matemáticas</span>
+                        <p class="testimony_review" style="margin-top: 15px;">"Jordy es un estudiante dedicado y apasionado. Su enfoque meticuloso para resolver problemas complejos es admirable; siempre busca entender la raíz de los desafíos y los aborda con total creatividad y precisión."</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/j.png" loading="lazy" alt="Foto Jairo Camargo" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="4">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle" style="text-align: left; margin-bottom: 5px;">Mauricio Pacheco</h2>
+                        <span class="testimony_course">Programador en WPOSS</span>
+                        <p class="testimony_review" style="margin-top: 15px;">"Destaco enormemente su capacidad de trabajo en equipo. Jordy es un colaborador comprometido que sabe liderar discusiones para llegar a soluciones consensuadas, adaptándose a diversos entornos y facilitando el progreso del grupo."</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/M.png" loading="lazy" alt="Foto Mauricio Pacheco" class="testimony_img">
+                    </figure>
+                </section>
+                <img src="Icons/rightarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="next">
             </div>
         </section>
     </main>
 
-    <footer class="footer" id="social_media">
+    <footer class="footer" id="contacto">
         <section class="footer_container container">
-            <nav class=" nav--footer">
+            <nav class="nav--footer">
                 <h2 class="footer_title">Jordy Prada</h2>
-                <ul class="nav_link nav_link--footer">
-                    <!-- (li.nav_items>a.nav_links{Option})*4 -->
+                <ul class="nav_link--footer">
                     <li class="nav_items">
-                        <a href="https://openwebinars.net/blog/que-es-html5/"><i class="fa-brands fa-html5" style="color: #f85d20;"></i></a>
-                        <a href="https://openwebinars.net/blog/que-es-html5/" class="nav_links">HTML5</a>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML" target="_blank"><i class="fa-brands fa-html5" style="color: #f85d20;"></i></a>
                     </li>
                     <li class="nav_items">
-                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS"><i class="fa-brands fa-css3" style="color: #3d84ff;"></i></a>
-                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS" class="nav_links">CSS3</a>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3" style="color: #3d84ff;"></i></a>
                     </li>
                     <li class="nav_items">
-                        <a href="https://www.java.com/es/download/help/whatis_java.html"><i class="fa-brands fa-java" style="color: #c70000;"></i></a>
-                        <a href="https://www.java.com/es/download/help/whatis_java.html" class="nav_links">JAVA</a>
+                        <a href="https://www.java.com/" target="_blank"><i class="fa-brands fa-java" style="color: #c70000;"></i></a>
                     </li>
                     <li class="nav_items">
-                        <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"><i class="fa-brands fa-js" style="color: #f4ee3e; padding-left: 20px;"></i></a>
-                        <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="nav_links">JAVASCRIPT</a>
+                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js" style="color: #f4ee3e;"></i></a>
                     </li>
                 </ul>
             </nav>
-            <form class="footer_form">
-                <h2 class="footer_info">Suscribete</h2>
-                <!-- .footer_inputs>input:email.footer_input+input:submit.footer_submit -->
+            <form class="footer_form" action="https://formspree.io/f/mjkgpzye" method="POST">
+                <h2 class="footer_info">¿Tienes un proyecto?</h2>
                 <div class="footer_inputs">
-                    <input type="email" class="footer_input" placeholder="Escribe tu E-Mail">
-                    <input type="submit" value="Contáctanos" class="footer_submit">
+                    <input type="email" name="email" class="footer_input" placeholder="Tu correo electrónico" required>
+                    <input type="submit" value="Hablemos" class="footer_submit">
                 </div>
             </form>
         </section>
         <section class="footer_copy container" id="redesSociales">
             <div class="footer_social">
-                <a href="https://github.com/JordyPradaYanes" class="footer_icon"><img src="Icons/git-hub.svg" alt="Icon git-hub"
-                        class="footer_img"></a>
-                <a href="https://instagram.com/jdpr.ada?igshid=OGQ5ZDc2ODk2ZA==" class="footer_icon"><img src="Icons/instagram.svg" alt="Icon Instagram"
-                        class="footer_img"></a>
-                <a href="https://www.linkedin.com/in/jordy-daniel-prada-yanes-b8a3a3272" class="footer_icon"><img src="Icons/linkedink.svg" alt="Icon Twitter" class="footer_img"></a>
+                <a href="https://github.com/JordyPradaYanes" target="_blank" class="footer_icon">
+                    <img src="Icons/git-hub.svg" alt="GitHub" class="footer_img">
+                </a>
+                <a href="https://instagram.com/jdpr.ada" target="_blank" class="footer_icon">
+                    <img src="Icons/instagram.svg" alt="Instagram" class="footer_img">
+                </a>
+                <a href="https://www.linkedin.com/in/jordy-daniel-prada-yanes-b8a3a3272" target="_blank" class="footer_icon">
+                    <img src="Icons/linkedink.svg" alt="LinkedIn" class="footer_img">
+                </a>
             </div>
-            <h3 class="footer_copyright">Derechos reservados &copy; Jordy-Prada-Yanes</h3>
+            <p class="footer_copyright">Diseñado por Jordy Prada &copy; 2024. Todos los derechos reservados.</p>
         </section>
     </footer>
 
-
     <script src="JS/slider.js"></script>
     <script src="JS/questions.js"></script>
+    <script src="JS/darkmode.js"></script>
     <script src="https://kit.fontawesome.com/459ee9189d.js" crossorigin="anonymous"></script>
-    </main>
-</body>
 
+    <!-- AOS JS & Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
 </html>

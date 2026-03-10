@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Jordy Prada Yanes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2091f9;
+        --primary-dark: #1d293f;
+        --secondary: #001a49;
+        --text-main: #334155;
+        --text-light: #64748b;
+        --bg-light: #f8fafc;
+        --white: #ffffff;
+        --accent: #5b21b6;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #e2e8f0;
+        color: var(--text-main);
+        line-height: 1.5;
+        padding: 40px 20px;
+      }
+
+      .cv-page {
+        max-width: 900px;
+        margin: 0 auto;
+        background: var(--white);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        min-height: 1100px; /* A4-ish proportions */
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        background-color: var(--secondary);
+        color: var(--white);
+        padding: 40px 30px;
+      }
+
+      .sidebar-section {
+        margin-bottom: 35px;
+      }
+
+      .sidebar-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+        color: var(--primary);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 8px;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid var(--primary);
+        margin: 0 auto 25px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 0.85rem;
+        color: #cbd5e1;
+      }
+
+      .contact-item i {
+        width: 20px;
+        margin-right: 12px;
+        color: var(--primary);
+      }
+
+      .skill-item {
+        margin-bottom: 15px;
+      }
+
+      .skill-name {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+
+      .skill-bar {
+        height: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+
+      .skill-progress {
+        height: 100%;
+        background: var(--primary);
+        border-radius: 3px;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 50px 45px;
+      }
+
+      header {
+        margin-bottom: 40px;
+      }
+
+      .name {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: var(--secondary);
+        line-height: 1.1;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        color: var(--primary);
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .section {
+        margin-bottom: 35px;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .section-title i {
+        margin-right: 12px;
+        color: var(--primary);
+        font-size: 1.2rem;
+      }
+
+      .summary {
+        font-size: 0.95rem;
+        color: var(--text-main);
+        text-align: justify;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 20px;
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .item-title {
+        font-weight: 700;
+        color: var(--text-main);
+        font-size: 1.05rem;
+      }
+
+      .item-date {
+        font-size: 0.85rem;
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      .item-subtitle {
+        font-size: 0.9rem;
+        color: var(--text-light);
+        font-style: italic;
+        margin-bottom: 8px;
+      }
+
+      .item-desc {
+        font-size: 0.9rem;
+        color: var(--text-main);
+      }
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .cert-item {
+        font-size: 0.85rem;
+        padding: 10px;
+        background: var(--bg-light);
+        border-radius: 6px;
+        border-left: 3px solid var(--primary);
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: none;
+        }
+        .cv-page {
+          box-shadow: none;
+          margin: 0;
+          width: 100%;
+          border-radius: 0;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+
+      .print-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .print-btn:hover {
+        transform: scale(1.05);
+        background: var(--secondary);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-btn no-print" onclick="window.print()">
+      <i class="fas fa-print"></i> Imprimir a PDF
+    </button>
+
+    <div class="cv-page">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img
+          src="../img/Foto_perfil.png"
+          alt="Jordy Prada"
+          class="profile-img"
+        />
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Contacto</h3>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            jpradayanes@gmail.com
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            www.linkedin.com/in/jordy-daniel-prada-yanes-b8a3a3272
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            github.com/JordyPradaYanes
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            jordypradayanes.github.io
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Habilidades</h3>
+          <div class="skill-item">
+            <div class="skill-name">Java & Python</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Cloud Architecture</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">SQL Databases</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Frontend (HTML/CSS/JS)</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Git / GitHub</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Algoritmia ICPC</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Idiomas</h3>
+          <div class="skill-item">
+            <div class="skill-name">Español (Nativo)</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Inglés (A1 Certificado)</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 30%"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header>
+          <h1 class="name">Jordy Prada Yanes</h1>
+          <p class="title">Estudiante de Ingeniería de Sistemas | Cloud & AI</p>
+        </header>
+
+        <section class="section">
+          <h2 class="section-title"><i class="fas fa-user"></i> Sobre Mí</h2>
+          <p class="summary">
+            Apasionado por la tecnología desde sus fundamentos lógicos hasta su
+            implementación a gran escala. Con formación certificada en
+            arquitectura cloud, bases de datos y desarrollo backend. Destaco por
+            mi capacidad analítica, forjada en competiciones internacionales de
+            programación (ICPC), y mi enfoque centrado en el usuario mediante el
+            estudio de psicología del consumidor y herramientas cognitivas.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">
+            <i class="fas fa-graduation-cap"></i> Formación Académica
+          </h2>
+          <div class="education-item">
+            <div class="item-header">
+              <span class="item-title">Ingeniería de Sistemas</span>
+              <span class="item-date">En Progreso</span>
+            </div>
+            <div class="item-subtitle">Universidad</div>
+          </div>
+          <div class="education-item">
+            <div class="item-header">
+              <span class="item-title">Técnico en Sistemas</span>
+              <span class="item-date">Graduado</span>
+            </div>
+            <div class="item-subtitle">Institución Educativa</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">
+            <i class="fas fa-award"></i> Logros y Certificaciones
+          </h2>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <strong>ICPC 2025/2026:</strong> Participante Maratón de
+              Programación
+            </div>
+            <div class="cert-item">
+              <strong>IBM:</strong> Certificación en Clase Cognitiva
+            </div>
+            <div class="cert-item">
+              <strong>Arquitectura Cloud:</strong> Diseño de sistemas escalables
+            </div>
+            <div class="cert-item">
+              <strong>Bases de Datos SQL:</strong> Gestión y modelado de datos
+            </div>
+            <div class="cert-item">
+              <strong>Psicología del Consumidor:</strong> UX para redes sociales
+            </div>
+            <div class="cert-item">
+              <strong>Git & GitHub:</strong> Control de versiones profesional
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">
+            <i class="fas fa-project-diagram"></i> Proyectos Relevantes
+          </h2>
+          <div class="experience-item">
+            <div class="item-header">
+              <span class="item-title"
+                >Repositorio de Proyectos Interactivos</span
+              >
+            </div>
+            <div class="item-subtitle">GitHub Portfolio</div>
+            <p class="item-desc">
+              Desarrollo de diversos proyectos como juegos de memoria, sistemas
+              solares animados y herramientas de tiempo real, aplicando lógica
+              algorítmica y diseño responsivo.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
