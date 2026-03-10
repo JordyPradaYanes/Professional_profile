@@ -217,6 +217,49 @@
         border-left: 3px solid var(--primary);
       }
 
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 20px 10px;
+        }
+
+        .cv-page {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        .sidebar {
+          padding: 30px 20px;
+        }
+
+        .profile-img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .main-content {
+          padding: 30px 20px;
+        }
+
+        .name {
+          font-size: 2rem;
+        }
+
+        .title {
+          font-size: 1rem;
+        }
+
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .print-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+          top: 10px;
+          right: 10px;
+        }
+      }
+
       @media print {
         body {
           padding: 0;
