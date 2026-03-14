@@ -1,0 +1,100 @@
+/* =========================================
+   sobre-mi.css — Sección Sobre Mí
+   ========================================= */
+
+.options {
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 60px 0;
+}
+
+.options_container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.options_texts .subtitle {
+  color: #fff;
+  text-align: left;
+}
+
+.options_texts .subtitle::after {
+  left: 0;
+  transform: none;
+}
+
+.options_paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.options_picture {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+}
+
+.options_img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.options_picture:hover .options_img {
+  transform: scale(1.05);
+}
+
+/* About Philosophy Box */
+.about_philosophy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(32, 145, 249, 0.1);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-top: 24px;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.about_philosophy i {
+  font-size: 1.3rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+body.dark-mode .about_philosophy {
+  background: rgba(32, 145, 249, 0.15);
+  color: #f8fafc;
+}
+
+/* About Currently List */
+.about_currently {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about_currently li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about_currently li i {
+  font-size: 1rem;
+  color: #36bcf7;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}

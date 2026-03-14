@@ -1,0 +1,93 @@
+/* =========================================
+   github.css — Sección GitHub CTA
+   ========================================= */
+
+.github-cta {
+  background: var(--primary-dark);
+  padding: 50px 0;
+}
+
+.github-cta__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 40px 48px;
+  flex-wrap: wrap;
+}
+
+.github-cta__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.github-cta__icon {
+  font-size: 3.5rem;
+  color: #fff;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.github-cta__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.github-cta__desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.github-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.github-cta__btn:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 30px rgba(32, 145, 249, 0.4);
+}
+
+.github-cta__btn i {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .github-cta__card {
+    padding: 28px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .github-cta__left {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .github-cta__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,68 @@
+/* =========================================
+   testimonios.css — Sección Testimonios
+   ========================================= */
+
+.testimony {
+  background-color: var(--bg-light);
+  padding: 60px 0;
+}
+
+.testimony_container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.testimony_body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease;
+}
+
+.testimony_body--show {
+  pointer-events: unset;
+  opacity: 1;
+}
+
+.testimony_review {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.testimony_img {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: var(--shadow-premium);
+}
+
+.testimony_course {
+  background: var(--primary);
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.testimony_arrow {
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.testimony_arrow:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,88 @@
+/* =========================================
+   habilidades.css — Sección Habilidades
+   ========================================= */
+
+.questions {
+  background: var(--bg-light);
+  padding: 60px 0;
+}
+
+.questions_container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.questions_padding {
+  background: var(--bg-white);
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.questions_padding:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.questions_padding--add {
+  padding-bottom: 25px;
+}
+
+.questions_answer {
+  padding: 0 40px;
+}
+
+.questions_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.questions_arrow {
+  width: 30px;
+  height: 30px;
+  background: var(--primary-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.questions_arrow--rotate {
+  transform: rotate(180deg);
+  background: var(--primary);
+}
+
+.questions_show {
+  color: var(--text-light);
+  line-height: 1.8;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.questions_padding--add .questions_show {
+  height: auto;
+  padding-bottom: 20px;
+  opacity: 1;
+}
+
+.questions_copy {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+body.dark-mode .questions_padding {
+  background: #1e293b;
+}

@@ -1,0 +1,73 @@
+/* =========================================
+   hero.css — Sección Hero / Portada
+   ========================================= */
+
+.person {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.person::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 26, 73, 0.85) 0%,
+      rgba(32, 145, 249, 0.7) 100%
+    ),
+    url("../img/fondo.jpg") center/cover no-repeat;
+  z-index: -1;
+}
+
+.person_container {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.person_title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.person_paragraph {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* Hero Typing SVG */
+.hero_typing {
+  display: block;
+  margin: 10px auto 20px;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
