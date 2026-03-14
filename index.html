@@ -66,6 +66,9 @@
             <a href="#proyectos" class="nav_links">Proyectos</a>
           </li>
           <li class="nav_items">
+            <a href="#estadisticas" class="nav_links">GitHub</a>
+          </li>
+          <li class="nav_items">
             <a href="#testimonios" class="nav_links">Testimonios</a>
           </li>
           <li class="nav_items">
@@ -85,6 +88,11 @@
       </nav>
       <section class="person_container">
         <h1 class="person_title">Jordy Prada Yanes</h1>
+        <img
+          src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Ingeniero+de+Sistemas+en+Formaci%C3%B3n;Desarrollador+Full+Stack;Apasionado+por+el+Desarrollo+M%C3%B3vil;Creando+Soluciones+Innovadoras"
+          alt="Typing animation"
+          class="hero_typing"
+        />
         <p class="person_paragraph">
           Ingeniería de Sistemas | Desarrollo Cloud & IA | Analítica Algorítmica
         </p>
@@ -101,17 +109,24 @@
               Mi Visión Tecnológica
             </h2>
             <p class="options_paragraph">
-              Soy estudiante de Ingeniería de Sistemas con una profunda vocación
-              por entender la tecnología desde sus fundamentos hasta su impacto
-              en el usuario. Mi formación no solo abarca el código; incluye la
-              <strong>arquitectura en la nube</strong>, el
-              <strong>pensamiento algorítmico avanzado</strong> forjado en
-              competiciones internacionales (ICPC), y la comprensión del
-              comportamiento humano a través de herramientas cognitivas y
-              <strong>psicología del consumidor</strong>. Mi objetivo es
-              construir soluciones de software que no solo sean robustas, sino
-              genuinamente intuitivas e inteligentes.
+              Soy un apasionado del desarrollo de software con un enfoque
+              <strong>Full Stack</strong> y <strong>Móvil</strong>. Actualmente en el cuarto
+              año de Ingeniería de Sistemas, perfeccionando mis habilidades a través
+              de proyectos desafiantes y el dominio de tecnologías modernas. Mi
+              formación también abarca la <strong>arquitectura en la nube</strong>,
+              el <strong>pensamiento algorítmico avanzado</strong> forjado en competiciones
+              internacionales (ICPC), y la comprensión del comportamiento humano a través
+              de herramientas cognitivas y <strong>psicología del consumidor</strong>.
             </p>
+            <div class="about_philosophy">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span><strong>Mi filosofía:</strong> Código limpio, arquitectura escalable y aprendizaje continuo.</span>
+            </div>
+            <ul class="about_currently">
+              <li><i class="fa-solid fa-satellite-dish"></i> Trabajando en proyectos de <strong>gestión de transporte</strong> y <strong>apps móviles</strong></li>
+              <li><i class="fa-solid fa-cloud"></i> Aprendiendo más sobre <strong>arquitecturas cloud</strong> y <strong>microservicios</strong></li>
+              <li><i class="fa-solid fa-code-branch"></i> Buscando colaborar en proyectos <strong>open source</strong></li>
+            </ul>
             <div class="options_buttons" style="margin-top: 30px">
               <a href="Documentos/CV_Jordy_Prada.html" class="btn btn--white"
                 >Descargar CV
@@ -395,11 +410,51 @@
       <!-- 5. Proyectos -->
       <section class="about" id="proyectos" data-aos="fade-up">
         <div class="container">
-          <h2 class="subtitle">Repositorios en GitHub</h2>
+          <h2 class="subtitle">Proyectos Destacados</h2>
           <p class="about_paragraph">
-            Explora mi trabajo práctico a través de los siguientes repositorios.
-            En cada uno aplico buenas prácticas y lógica de programación.
+            Soluciones Full Stack construidas con tecnologías modernas, desde
+            gestión en tiempo real hasta seguimiento de fauna.
           </p>
+
+          <!-- Featured Projects -->
+          <div class="featured_projects">
+            <article class="featured_card">
+              <div class="featured_header">
+                <i class="fa-solid fa-bus featured_icon"></i>
+                <h3 class="featured_title">🚌 Movi</h3>
+              </div>
+              <p class="featured_desc">
+                <strong>Solución integral para gestión de transporte y rutas.</strong>
+                Sistema completo con frontend moderno en Angular, Firebase para
+                backend y seguimiento en tiempo real de rutas y vehículos.
+              </p>
+              <div class="featured_tags">
+                <span class="tag tag--angular">Angular</span>
+                <span class="tag tag--firebase">Firebase</span>
+                <span class="tag tag--tailwind">Tailwind CSS</span>
+              </div>
+            </article>
+
+            <article class="featured_card">
+              <div class="featured_header">
+                <i class="fa-solid fa-paw featured_icon"></i>
+                <h3 class="featured_title">🦁 Zootracker</h3>
+              </div>
+              <p class="featured_desc">
+                <strong>Aplicación web para seguimiento de fauna.</strong>
+                Desarrollada con Angular para el seguimiento y cuidado de animales,
+                integrada con Firebase para gestión en tiempo real.
+              </p>
+              <div class="featured_tags">
+                <span class="tag tag--angular">Angular</span>
+                <span class="tag tag--firebase">Firebase</span>
+                <span class="tag tag--tailwind">Tailwind CSS</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- GitHub Repos -->
+          <h3 class="repos_subtitle">Repositorios en GitHub</h3>
           <div class="about_main">
             <article class="about_icons">
               <a
@@ -456,6 +511,32 @@
             </article>
           </div>
         </div>
+      </section>
+
+      <!-- 5b. GitHub CTA -->
+      <section class="github-cta" id="estadisticas" data-aos="fade-up">
+        <div class="container">
+          <div class="github-cta__card">
+            <div class="github-cta__left">
+              <i class="fa-brands fa-github github-cta__icon"></i>
+              <div>
+                <h2 class="github-cta__title">Visita mi GitHub</h2>
+                <p class="github-cta__desc">
+                  Explora todos mis repositorios, contribuciones y proyectos open source.
+                  Desde aplicaciones Full Stack hasta soluciones móviles con Android.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/JordyPradaYanes"
+              target="_blank"
+              class="github-cta__btn"
+            >
+              <i class="fa-brands fa-github"></i> Ver perfil
+            </a>
+          </div>
+        </div>
+
       </section>
 
       <!-- 6. Testimonios -->
