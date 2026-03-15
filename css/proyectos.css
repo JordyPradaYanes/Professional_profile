@@ -170,6 +170,24 @@ body.dark-mode .featured_title {
   border: 1px solid rgba(56, 178, 172, 0.3);
 }
 
+.tag--html5 {
+  background: rgba(227, 79, 38, 0.1);
+  color: #e34f26;
+  border: 1px solid rgba(227, 79, 38, 0.3);
+}
+
+.tag--css3 {
+  background: rgba(21, 114, 182, 0.1);
+  color: #1572b6;
+  border: 1px solid rgba(21, 114, 182, 0.3);
+}
+
+.tag--javascript {
+  background: rgba(247, 223, 30, 0.1);
+  color: #d4b106;
+  border: 1px solid rgba(247, 223, 30, 0.4);
+}
+
 /* Repos subtitle */
 .repos_subtitle {
   font-size: 1.4rem;
