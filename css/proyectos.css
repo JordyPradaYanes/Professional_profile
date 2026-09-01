@@ -170,6 +170,18 @@ body.dark-mode .featured_title {
   border: 1px solid rgba(56, 178, 172, 0.3);
 }
 
+.tag--maps {
+  background: rgba(52, 168, 83, 0.1);
+  color: #2e7d32;
+  border: 1px solid rgba(52, 168, 83, 0.3);
+}
+
+.tag--pwa {
+  background: rgba(103, 58, 183, 0.1);
+  color: #673ab7;
+  border: 1px solid rgba(103, 58, 183, 0.3);
+}
+
 .tag--html5 {
   background: rgba(227, 79, 38, 0.1);
   color: #e34f26;
@@ -186,6 +198,61 @@ body.dark-mode .featured_title {
   background: rgba(247, 223, 30, 0.1);
   color: #d4b106;
   border: 1px solid rgba(247, 223, 30, 0.4);
+}
+
+/* Action Buttons */
+.featured_actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn_project {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn_project--demo {
+  background: linear-gradient(135deg, var(--primary) 0%, #0d6efd 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(32, 145, 249, 0.25);
+}
+
+.btn_project--demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(32, 145, 249, 0.4);
+  color: #ffffff;
+}
+
+.btn_project--repo {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--text-main);
+  border: 1px solid rgba(15, 23, 42, 0.15);
+}
+
+.btn_project--repo:hover {
+  background: rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+  color: var(--primary);
+}
+
+body.dark-mode .btn_project--repo {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f5f9;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .btn_project--repo:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #36bcf7;
 }
 
 /* Repos subtitle */
